@@ -3,7 +3,14 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 
 const app = express();
-app.use(cors());
+app.use(cors(
+  {
+    origin:["https://wiz-stake-newbackend.vercel.app"],
+    methods:["POST","GET"],
+    credentials:true
+  }
+    
+));
 app.use(express.json());
 
 // Replace these values with your actual MongoDB connection string and port number
