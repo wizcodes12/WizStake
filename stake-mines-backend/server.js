@@ -5,7 +5,7 @@ const cors = require('cors');
 const app = express();
 app.use(cors(
   {
-    origin:["https://wiz-stake-newbackend.vercel.app"],
+    origin:["https://wiz-stake-frontend.vercel.app/"],
     methods:["POST","GET"],
     credentials:true
   }
